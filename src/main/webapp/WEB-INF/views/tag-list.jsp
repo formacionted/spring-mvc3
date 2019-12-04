@@ -74,7 +74,7 @@ text-decoration:none;
 					<td>${tag.name}</td>
 					<td>
 						<c:forEach items="${tag.products}" var="product">
-						 <span class="badge badge-info">${product.name}</span>
+						 <span class="badge badge-info"><a href="${pageContext.request.contextPath}/products/${product.id}">${product.name}</a></span>
 						 </c:forEach>
 					</td>
 					<td> 

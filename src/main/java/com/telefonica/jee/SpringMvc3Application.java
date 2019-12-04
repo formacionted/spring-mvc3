@@ -51,21 +51,21 @@ public class SpringMvc3Application implements CommandLineRunner{
 		ProductSize size2 = new ProductSize(new BigDecimal(5.99),new BigDecimal(6.99),new BigDecimal(7.99));
 		ProductSize size3 = new ProductSize(new BigDecimal(6.99),new BigDecimal(6.99),new BigDecimal(7.99));
 		
-		Manufacturer man1 = manufacturerRepository.save(new Manufacturer("man1", "man1"));
-		Manufacturer man2 = manufacturerRepository.save(new Manufacturer("man2", "man2"));
-		Manufacturer man3 = manufacturerRepository.save(new Manufacturer("man3", "man3"));
+		Manufacturer man1 = manufacturerRepository.save(new Manufacturer("Nike", "man1"));
+		Manufacturer man2 = manufacturerRepository.save(new Manufacturer("Adidas", "man2"));
+		Manufacturer man3 = manufacturerRepository.save(new Manufacturer("Rebook", "man3"));
 
-		Tag tag1 = tagRepository.save(new Tag("tag1"));
-		Tag tag2 = tagRepository.save(new Tag("tag2"));
-		Tag tag3 = tagRepository.save(new Tag("tag3"));
+		Tag tag1 = tagRepository.save(new Tag("Running"));
+		Tag tag2 = tagRepository.save(new Tag("Walk"));
+		Tag tag3 = tagRepository.save(new Tag("Mountain"));
 		
-		Product product1 = new Product("product1", new BigDecimal(6.99), 6);
+		Product product1 = new Product("Nike Airmax", new BigDecimal(6.99), 6);
 //		size1.setProduct(product1);
 		
-		Product product2 = new Product("product2", new BigDecimal(6.99), 6);
+		Product product2 = new Product("Asidras", new BigDecimal(6.99), 6);
 //		size2.setProduct(product2);
 		
-		Product product3 = new Product("product3", new BigDecimal(6.99), 6);
+		Product product3 = new Product("Acliclas", new BigDecimal(6.99), 6);
 //		size3.setProduct(product3);
 		
 

@@ -53,8 +53,12 @@ text-decoration:none;
 		
 		<h1>Products Directory</h1>
 		<hr/>
-		
-		<p>${NOTIFICATION}</p>
+
+				<div class="alert alert-primary" role="alert">
+				 ${message}
+				</div>
+	
+
 		
 		<p>
 			<a class = "btn btn-primary" href="${pageContext.request.contextPath}/products/empty">Add Product</a>

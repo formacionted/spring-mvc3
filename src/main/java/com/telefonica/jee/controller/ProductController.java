@@ -84,8 +84,6 @@ public class ProductController {
 		if (product.isPresent()) {
 			mav.setViewName("product-edit");
 			mav.addObject("product", product.get());
-			mav.addObject("product2", product.get());
-
 			mav.addObject("manufacturers", manufacturerRepository.findAll());
 			mav.addObject("tags", tagRepository.findAll());
 		} else {
